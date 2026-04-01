@@ -6,8 +6,6 @@ str2 = input("Enter a substring: ")
 
 count = 0
 
-for i in range(len(str1)):
-    if str1[i:i+len(str2)] == str2:
-        count += 1
+count = str1.count(str2)
 
 print("The substring", str2, "=", count)
