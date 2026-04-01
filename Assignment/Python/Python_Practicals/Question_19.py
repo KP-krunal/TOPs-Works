@@ -5,7 +5,9 @@ sentence = input("Enter a sentence: ") # split sentence into words
 
 words = sentence.split()
 
-word_count = {}
+word_count = {} # create an empty dictionary to store word counts
+
+# Like word = key and count = value in dictionary
 
 for word in words:
     if word in word_count:
