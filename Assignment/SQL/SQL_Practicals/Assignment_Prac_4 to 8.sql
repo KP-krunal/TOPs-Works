@@ -11,9 +11,8 @@ where emplloyeeID = 1;
 -- 5) In the Company table, the statement that changes the name of “Urban 
 --    Outfitters, Inc.” to “Urban Outfitters”. 
 select * from company;
-update company
-set companyName = 'TechNova Ltd.'
-where companyID = 1;
+update Company set CompanyName = 'TechNova Pvt. Ltd.' where CompanyName = 'TechNova Ltd.';
+
 
 -- 6)  In ContactEmployee table, the statement that removes Dianne Connor’s contact 
 --     event with Jack Lee (one statement). 
