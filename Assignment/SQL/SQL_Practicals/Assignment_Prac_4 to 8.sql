@@ -16,10 +16,10 @@ update Company set CompanyName = 'TechNova Pvt. Ltd.' where CompanyName = 'TechN
 
 -- 6)  In ContactEmployee table, the statement that removes Dianne Connor’s contact 
 --     event with Jack Lee (one statement). 
-select * from contactemployee;
-select * from contact;
-delete from contactemployee
-where contactemployeeID = 10;
+DELETE ce
+FROM ContactEmployee ce
+JOIN Contact c ON ce.ContactID = c.ContactID 
+WHERE c.FirstName = 'Rohit'  AND c.LastName = 'Sharma';
 
 
 -- 7) Write the SQL SELECT query that displays the names of the employees that 
